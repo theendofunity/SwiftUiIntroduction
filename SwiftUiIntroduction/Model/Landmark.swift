@@ -21,6 +21,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     let state: String
     let park: String
     let description: String
+    var isFavorite: Bool
     
     private let imageName: String
     private let coordinates: Coordinates
