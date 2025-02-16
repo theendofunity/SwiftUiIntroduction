@@ -39,9 +39,33 @@
 		BC8B38C12D6237EE003268A3 /* WatchLandmarks Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchLandmarks Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BC8B38DF2D6238D6003268A3 /* Exceptions for "SwiftUiIntroduction" folder in "WatchLandmarks Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Model/Hike.swift,
+				Model/Landmark.swift,
+				Model/ModelData.swift,
+				Model/Profile.swift,
+				Resources/hikeData.json,
+				Resources/landmarkData.json,
+				SwiftUiIntroductionApp.swift,
+				View/Helpers/CircleImage.swift,
+				View/Helpers/MapView.swift,
+				View/Landmarks/LandmarkList.swift,
+				View/Landmarks/LandmarkRow.swift,
+			);
+			target = BC8B38C02D6237EE003268A3 /* WatchLandmarks Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BC434CF62D1F4E270071D8E8 /* SwiftUiIntroduction */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BC8B38DF2D6238D6003268A3 /* Exceptions for "SwiftUiIntroduction" folder in "WatchLandmarks Watch App" target */,
+			);
 			path = SwiftUiIntroduction;
 			sourceTree = "<group>";
 		};
