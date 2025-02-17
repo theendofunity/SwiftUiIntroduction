@@ -37,6 +37,7 @@
 /* Begin PBXFileReference section */
 		BC434CF42D1F4E270071D8E8 /* SwiftUiIntroduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUiIntroduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8B38C12D6237EE003268A3 /* WatchLandmarks Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchLandmarks Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8B38EC2D624010003268A3 /* MacLandmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacLandmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -58,6 +59,25 @@
 			);
 			target = BC8B38C02D6237EE003268A3 /* WatchLandmarks Watch App */;
 		};
+		BC8B39052D624198003268A3 /* Exceptions for "SwiftUiIntroduction" folder in "MacLandmarks" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Model/Hike.swift,
+				Model/Landmark.swift,
+				Model/ModelData.swift,
+				Model/Profile.swift,
+				Resources/hikeData.json,
+				Resources/landmarkData.json,
+				SwiftUiIntroductionApp.swift,
+				View/Helpers/CircleImage.swift,
+				View/Helpers/FavoriteButton.swift,
+				View/Helpers/MapView.swift,
+				View/Landmarks/LandmarkList.swift,
+				View/Landmarks/LandmarkRow.swift,
+			);
+			target = BC8B38EB2D624010003268A3 /* MacLandmarks */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -65,6 +85,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				BC8B38DF2D6238D6003268A3 /* Exceptions for "SwiftUiIntroduction" folder in "WatchLandmarks Watch App" target */,
+				BC8B39052D624198003268A3 /* Exceptions for "SwiftUiIntroduction" folder in "MacLandmarks" target */,
 			);
 			path = SwiftUiIntroduction;
 			sourceTree = "<group>";
@@ -72,6 +93,11 @@
 		BC8B38C22D6237EE003268A3 /* WatchLandmarks Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "WatchLandmarks Watch App";
+			sourceTree = "<group>";
+		};
+		BC8B38ED2D624010003268A3 /* MacLandmarks */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MacLandmarks;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -91,6 +117,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC8B38E92D624010003268A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,6 +132,7 @@
 			children = (
 				BC434CF62D1F4E270071D8E8 /* SwiftUiIntroduction */,
 				BC8B38C22D6237EE003268A3 /* WatchLandmarks Watch App */,
+				BC8B38ED2D624010003268A3 /* MacLandmarks */,
 				BC434CF52D1F4E270071D8E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +142,7 @@
 			children = (
 				BC434CF42D1F4E270071D8E8 /* SwiftUiIntroduction.app */,
 				BC8B38C12D6237EE003268A3 /* WatchLandmarks Watch App.app */,
+				BC8B38EC2D624010003268A3 /* MacLandmarks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +196,28 @@
 			productReference = BC8B38C12D6237EE003268A3 /* WatchLandmarks Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BC8B38EB2D624010003268A3 /* MacLandmarks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8B38F82D624011003268A3 /* Build configuration list for PBXNativeTarget "MacLandmarks" */;
+			buildPhases = (
+				BC8B38E82D624010003268A3 /* Sources */,
+				BC8B38E92D624010003268A3 /* Frameworks */,
+				BC8B38EA2D624010003268A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BC8B38ED2D624010003268A3 /* MacLandmarks */,
+			);
+			name = MacLandmarks;
+			packageProductDependencies = (
+			);
+			productName = MacLandmarks;
+			productReference = BC8B38EC2D624010003268A3 /* MacLandmarks.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +232,9 @@
 						CreatedOnToolsVersion = 16.2;
 					};
 					BC8B38C02D6237EE003268A3 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					BC8B38EB2D624010003268A3 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -195,6 +255,7 @@
 			targets = (
 				BC434CF32D1F4E270071D8E8 /* SwiftUiIntroduction */,
 				BC8B38C02D6237EE003268A3 /* WatchLandmarks Watch App */,
+				BC8B38EB2D624010003268A3 /* MacLandmarks */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +275,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC8B38EA2D624010003268A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,6 +293,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BC8B38BD2D6237EE003268A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8B38E82D624010003268A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -481,6 +556,60 @@
 			};
 			name = Release;
 		};
+		BC8B38F92D624011003268A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacLandmarks/MacLandmarks.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacLandmarks/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.dudkin.MacLandmarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BC8B38FA2D624011003268A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacLandmarks/MacLandmarks.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacLandmarks/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.dudkin.MacLandmarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,6 +636,15 @@
 			buildConfigurations = (
 				BC8B38D02D6237EF003268A3 /* Debug */,
 				BC8B38D12D6237EF003268A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8B38F82D624011003268A3 /* Build configuration list for PBXNativeTarget "MacLandmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8B38F92D624011003268A3 /* Debug */,
+				BC8B38FA2D624011003268A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
